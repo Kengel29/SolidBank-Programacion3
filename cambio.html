@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de divisas | SolidBank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head>
+<body><a class="skip" href="#contenido">Ir al contenido</a>
+<header class="top">
+<div class="util"><div class="prof"><span>Soy:</span><a href="personas.html">Persona</a><a href="empresas.html">Empresa</a></div>
+<nav aria-label="Acceso rápido"><a href="sucursales.html">Sucursales y cajeros</a><a href="contacto.html">Ayuda · 809-555-0100</a></nav></div>
+<div class="bar"><a class="brand" href="index.html"><span class="logo"><img src="logo.png" alt="SolidBank"></span><span>SolidBank</span></a>
+<button class="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
+<nav id="menu" aria-label="Principal"><ul><li><a href="index.html">Inicio</a></li><li class="has-sub"><a href="personas.html">Personas</a><ul class="sub"><li><a href="cuentas.html">Cuentas</a></li><li><a href="tarjetas.html">Tarjetas</a></li><li><a href="prestamos.html">Préstamos</a></li><li><a href="ahorro.html">Ahorro e inversión</a></li><li><a href="seguros.html">Seguros</a></li></ul></li><li class="has-sub"><a href="empresas.html">Empresas</a><ul class="sub"><li><a href="empresas.html#nomina">Nómina y pagos</a></li><li><a href="empresas.html#cobros">Cobros y POS</a></li><li><a href="empresas.html#credito">Crédito pyme</a></li><li><a href="empresas.html#exterior">Comercio exterior</a></li></ul></li><li class="has-sub"><a href="simulador.html" class="on">Herramientas</a><ul class="sub"><li><a href="simulador.html">Simulador de préstamo</a></li><li><a href="cambio.html">Calculadora de divisas</a></li><li><a href="sucursales.html">Sucursales y cajeros</a></li></ul></li><li><a href="banca-digital.html">Banca digital</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul><a class="btn" href="banca-digital.html">Entrar a mi banca</a></nav></div></header>
+<main id="contenido">
+<section class="phero"><p class="crumbs"><a href="index.html">Inicio</a> / Herramientas / Divisas</p><h1>Calculadora de divisas</h1></section>
+<section class="sec"><p class="lead">Convierte entre pesos dominicanos, dólares y euros. Las tasas son de referencia y puedes cambiarlas por las del día.</p>
+<div class="calc"><div class="ctrl fx">
+<label>Monto<input id="fx-monto" type="number" min="0" step="any" value="100" inputmode="decimal"></label>
+<div class="fxrow"><label>De<select id="fx-de"><option value="USD">Dólar (USD)</option><option value="EUR">Euro (EUR)</option><option value="DOP">Peso dominicano (DOP)</option></select></label>
+<button type="button" id="fx-swap" class="btn ghost" aria-label="Invertir monedas">⇄</button>
+<label>A<select id="fx-a"><option value="DOP" selected>Peso dominicano (DOP)</option><option value="USD">Dólar (USD)</option><option value="EUR">Euro (EUR)</option></select></label></div>
+<h3 style="margin-top:1.5rem">Tasas del día (RD$)</h3>
+<table class="rates"><tr><th></th><th>Compra</th><th>Venta</th></tr>
+<tr><td>Dólar</td><td><input id="usd-c" type="number" step="0.01" value="58.80"></td><td><input id="usd-v" type="number" step="0.01" value="60.10"></td></tr>
+<tr><td>Euro</td><td><input id="eur-c" type="number" step="0.01" value="64.00"></td><td><input id="eur-v" type="number" step="0.01" value="68.00"></td></tr></table></div>
+<div class="result" aria-live="polite"><small>Recibes aproximadamente</small><strong id="fx-res">0</strong><p id="fx-info"></p><p>Compra: el banco te compra la divisa. Venta: el banco te la vende.</p><a class="btn" href="contacto.html">Cambiar en SolidBank</a></div></div></section>
+</main>
+<footer><div class="fcols">
+<div><img src="logo.png" alt="SolidBank" width="170"><p>Tu banco que te da la mano.</p></div>
+<div><h4>Personas</h4><a href="cuentas.html">Cuentas</a><a href="tarjetas.html">Tarjetas</a><a href="prestamos.html">Préstamos</a><a href="ahorro.html">Ahorro</a><a href="seguros.html">Seguros</a></div>
+<div><h4>Empresas</h4><a href="empresas.html#nomina">Nómina y pagos</a><a href="empresas.html#cobros">Cobros y POS</a><a href="empresas.html#credito">Crédito pyme</a></div>
+<div><h4>SolidBank</h4><a href="nosotros.html">Nosotros</a><a href="sucursales.html">Sucursales</a><a href="contacto.html">Contacto</a><a href="banca-digital.html">Banca digital</a></div></div>
+<p class="legal">© 2026 SolidBank. Proyecto académico de diseño web; entidad ficticia.</p></footer>
+<script src="script.js"></script></body></html>
